@@ -1,0 +1,85 @@
+.book-title {
+  height: 39px;
+  width: 210px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 10px 0 40px 10px;
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+  margin: 0 0 0 10px;
+}
+
+.book-genre {
+  height: 30px;
+  width: 98px;
+  color: #828282;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.book-author-title {
+  height: 22px;
+  width: 133px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.book-author-name{
+  height: 22px;
+  width: 274px;
+  color: #828282;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.book-editorial-title {
+  height: 22px;
+  width: 80px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.book-editorial-name {
+  height: 22px;
+  width: 274px;
+  color: #828282;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.book-publish-date-title {
+  height: 22px;
+  width: 177px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.book-publish-date {
+  height: 22px;
+  width: 274px;
+  color: #828282;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 24px;
+}
