@@ -1,12 +1,14 @@
 @import 'colors';
 * {font-family: Roboto};
 
-.book-content {
+.book-content-row {
+  margin: 15px;
+}
+
+.book-cover-page {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 125px;
-  margin-left: 10px;
+  flex-direction: row;
+  margin-top: 10px;
 }
 
 .book-genre {
@@ -18,19 +20,30 @@
   line-height: 30px;
 }
 
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+  margin-left: 10px;
+}
+
+.book-img {
+  display: flex;
+  margin: 10px 15px 0 25px;
+  width: 250px;
+}
+
 .book-title {
-  height: 40px;
-  width: 210px;
+  width: 200px;
   color: $black;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
   margin: 10px 0 40px 10px;
 }
-
 .default-black-text {
   color: $black;
-  height: 25px;
   font-size: 20px;
   font-weight: 700;
   line-height: 25px;
@@ -38,7 +51,6 @@
 }
 
 .default-grey-text {
-  height: 25px;
   width: 275px;
   color: $grey;
   font-size: 20px;
