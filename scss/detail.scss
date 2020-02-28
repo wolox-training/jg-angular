@@ -1,85 +1,46 @@
-.book-title {
-  height: 39px;
-  width: 210px;
-  color: #000;
-  font-family: Roboto;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38px;
-  margin: 10px 0 40px 10px;
-}
+@import 'colors';
+* {font-family: Roboto};
 
 .book-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 130px;
-  margin: 0 0 0 10px;
+  height: 125px;
+  margin-left: 10px;
 }
 
 .book-genre {
   height: 30px;
-  width: 98px;
-  color: #828282;
-  font-family: Roboto;
-  font-size: 24px;
+  width: 100px;
+  color: $grey;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px;
 }
 
-.book-author-title {
-  height: 22px;
-  width: 133px;
-  color: #000;
-  font-family: Roboto;
-  font-size: 20px;
+.book-title {
+  height: 40px;
+  width: 210px;
+  color: $black;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 40px;
+  margin: 10px 0 40px 10px;
 }
 
-.book-author-name{
-  height: 22px;
-  width: 274px;
-  color: #828282;
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.book-editorial-title {
-  height: 22px;
-  width: 80px;
-  color: #000;
-  font-family: Roboto;
+.default-black-text {
+  color: $black;
+  height: 25px;
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 25px;
+  margin-right: 5px;
 }
 
-.book-editorial-name {
-  height: 22px;
-  width: 274px;
-  color: #828282;
-  font-family: Roboto;
+.default-grey-text {
+  height: 25px;
+  width: 275px;
+  color: $grey;
   font-size: 20px;
-  line-height: 24px;
-}
-
-.book-publish-date-title {
-  height: 22px;
-  width: 177px;
-  color: #000;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.book-publish-date {
-  height: 22px;
-  width: 274px;
-  color: #828282;
-  font-family: Roboto;
-  font-size: 20px;
-  line-height: 24px;
+  line-height: 25px;
 }
