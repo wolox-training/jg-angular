@@ -20,6 +20,10 @@
   line-height: 30px;
 }
 
+.book-header {
+  margin-top: 10px;
+}
+
 .book-info {
   display: flex;
   flex-direction: column;
@@ -38,8 +42,8 @@
   color: $black;
   font-size: 30px;
   font-weight: 700;
-  line-height: 40px;
-  margin: 10px 15px 40px 10px;
+  line-height: 10px;
+  margin: 10px 15px 25px 10px;
 } 
 
 .default-text {  
@@ -52,4 +56,9 @@
   color: $black;
   font-weight: 700;
   margin-right: 5px;
+}
+
+.rectangle {
+  background-color: #BED23C;
+  margin: 0 0 30px 10px;
 }
