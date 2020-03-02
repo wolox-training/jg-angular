@@ -1,8 +1,8 @@
 @import 'colors';
 
 * {
-  font-family: Roboto
-};
+  font-family: Roboto;
+}
 
 .book-content-row {
   margin: 15px;
@@ -10,7 +10,6 @@
 
 .book-cover-page {
   display: flex;
-  flex-direction: row;
   margin-top: 10px;
 }
 
