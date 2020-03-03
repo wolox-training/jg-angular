@@ -1,15 +1,16 @@
 @import 'colors';
 
 * {
-  font-family: Roboto
-};
+  font-family: Roboto;
+}
 
-.book-content {
+.book-content-row {
+  margin: 15px;
+}
+
+.book-cover-page {
   display: flex;
-  flex-direction: column;
-  height: 125px;
-  justify-content: space-between;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .book-genre {
@@ -17,6 +18,20 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+  margin-left: 10px;
+}
+
+.book-img {
+  display: flex;
+  margin: 10px 15px 0 25px;
+  width: 250px;
 }
 
 .book-title {
