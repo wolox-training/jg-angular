@@ -21,7 +21,9 @@
 }
 
 .book-header {
-  margin-top: 10px;
+  margin: 10px 0 15px 15px;
+  border-bottom: 5px solid $earls-green;
+  width: 550px;
 }
 
 .book-info {
@@ -43,7 +45,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 10px;
-  margin: 10px 15px 25px 10px;
+  margin: 10px 15px 25px 0;
 } 
 
 .default-text {  
@@ -56,9 +58,4 @@
   color: $black;
   font-weight: 700;
   margin-right: 5px;
-}
-
-.rectangle {
-  background-color: #BED23C;
-  margin: 0 0 30px 10px;
 }
