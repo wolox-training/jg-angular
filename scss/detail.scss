@@ -10,7 +10,11 @@
 
 .book-cover-page {
   display: flex;
-  margin-top: 10px;
+  margin: 50px 0 0 50px;
+  height: 416px;
+  width: 900px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $black-shadow;
 }
 
 .book-genre {
@@ -20,17 +24,21 @@
   line-height: 30px;
 }
 
+.book-header {
+  margin: 10px 0 15px 15px;
+  border-bottom: 5px solid $earls-green;
+}
+
 .book-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 125px;
-  margin-left: 10px;
+  margin: 0 25px 0 10px;
+  flex-grow: 1;
 }
 
 .book-img {
   display: flex;
-  margin: 10px 15px 0 25px;
+  margin: 25px;
   width: 250px;
 }
 
@@ -38,8 +46,8 @@
   color: $black;
   font-size: 30px;
   font-weight: 700;
-  line-height: 40px;
-  margin: 10px 15px 40px 10px;
+  line-height: 10px;
+  margin: 25px 15px 25px 0;
 } 
 
 .default-text {  
