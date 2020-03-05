@@ -4,15 +4,6 @@
   font-family: Roboto;
 }
 
-.book-badge {
-    height: 120px;
-    width: 100px;
-    transform: rotate(1deg);
-    position: absolute;
-    top: 50px;
-    left: 250px
-}
-
 .book-content-row {
   margin: 15px;
 }
@@ -24,6 +15,17 @@
   width: 900px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
+}
+
+.book-cover-page::after {
+  background: url("images/badge.png") no-repeat;
+  content: "";
+  height: 120px;
+  width: 100px;
+  transform: rotate(1deg);
+  position: absolute;
+  top: 50px;
+  left: 250px
 }
 
 .book-genre {
