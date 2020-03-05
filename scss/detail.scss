@@ -36,7 +36,6 @@
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
   margin: 25px;
-  justify-content: center;
 }
 
 .book-genre {
@@ -61,12 +60,15 @@
 .book-list-img {
   height: 200px;
   width: 142px;
-  margin: 25px;
+  margin: 25px 25px 10px 25px;
 }
 
 .books-list-row {
   display: flex;
-  justify-content: space-around;
+}
+
+.book-list-info {
+  margin-left: 25px;
 }
 
 .book-info {
@@ -100,4 +102,27 @@
   color: $black;
   font-weight: 700;
   margin-right: 5px;
+}
+
+.list-title-info {
+  height: 15px;
+  width: 109px;
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.list-author-info {
+  height: 14px;
+  width: 109px;
+  color: $grey;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.all-books-list {
+  display: flex;
+  justify-content: center;
 }
