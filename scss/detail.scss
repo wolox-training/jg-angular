@@ -14,10 +14,8 @@
   height: 416px;
   width: 900px;
   background-color: $white;
-  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 10px 0 $black-shadow;
 }
-
-//div super gigante que englobe al cover-page
 
 .book-genre {
   color: $grey;
