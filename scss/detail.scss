@@ -28,6 +28,17 @@
   left: 250px
 }
 
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 198px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $black-shadow;
+  margin: 25px;
+  justify-content: center;
+}
+
 .book-genre {
   color: $grey;
   font-size: 25px;
@@ -38,6 +49,24 @@
 .book-header {
   margin: 10px 0 15px 15px;
   border-bottom: 5px solid $earls-green;
+}
+
+.books-list {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  flex-direction: column;
+}
+
+.book-list-img {
+  height: 200px;
+  width: 142px;
+  margin: 25px;
+}
+
+.books-list-row {
+  display: flex;
+  justify-content: space-around;
 }
 
 .book-info {
