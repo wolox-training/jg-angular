@@ -4,17 +4,22 @@
   font-family: Roboto;
 }
 
+.all-books-list {
+  display: flex;
+  justify-content: center;
+}
+
 .book-content-row {
   margin: 15px;
 }
 
 .book-cover-page {
-  display: flex;
-  margin: 50px 0 0 50px;
-  height: 416px;
-  width: 900px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
+  display: flex;
+  height: 416px;
+  margin: 50px 0 0 50px;
+  width: 900px;
 }
 
 .book-cover-page::after {
@@ -29,13 +34,13 @@
 }
 
 .book-detail {
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: 198px;
-  background-color: $white;
-  box-shadow: 4px 4px 10px 0 $black-shadow;
   margin: 15px;
+  width: 198px;
 }
 
 .book-genre {
@@ -46,42 +51,31 @@
 }
 
 .book-header {
-  margin: 10px 0 15px 15px;
   border-bottom: 5px solid $earls-green;
-}
-
-.books-list {
-  display: flex;
-  justify-content: center;
-  margin: 25px;
-  flex-direction: column;
-}
-
-.book-list-img {
-  height: 200px;
-  width: 142px;
-  margin: 25px 25px 10px 25px;
-}
-
-.books-list-row {
-  display: flex;
-}
-
-.book-list-info {
-  margin-left: 25px;
-}
-
-.book-info {
-  display: flex;
-  flex-direction: column;
-  margin: 0 25px 0 10px;
-  flex-grow: 1;
+  margin: 10px 0 15px 15px;
 }
 
 .book-img {
   display: flex;
   margin: 25px;
   width: 250px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 25px 0 10px;
+}
+
+.book-list-img {
+  height: 200px;
+  margin: 25px 25px 10px 25px;
+  width: 142px;
+}
+
+.book-list-info {
+  margin-left: 25px;
 }
 
 .book-title {
@@ -91,6 +85,17 @@
   line-height: 10px;
   margin: 25px 15px 25px 0;
 } 
+
+.books-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+}
+
+.books-list-row {
+  display: flex;
+}
 
 .default-text {  
   color: $grey;
@@ -104,14 +109,6 @@
   margin-right: 5px;
 }
 
-.list-title-info {
-  margin: 5px 0;
-  color: $black;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
 .list-author-info {
   color: $grey;
   font-size: 14px;
@@ -119,7 +116,10 @@
   margin-bottom: 10px;
 }
 
-.all-books-list {
-  display: flex;
-  justify-content: center;
+.list-title-info {
+  color: $black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 5px 0;
 }
