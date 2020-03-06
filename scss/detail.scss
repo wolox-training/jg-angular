@@ -165,3 +165,27 @@
   line-height: 21px;
   margin: 25px;
 }
+
+.login-inputs {
+  height: 400px;
+  width: 300px;
+  background-color: $wild-sand;
+  margin-top: 75px;
+  border-top: 5px solid $cerulean;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-wolox-login {
+  display: flex;
+  flex-grow: 1;
+  margin: 40px
+}
