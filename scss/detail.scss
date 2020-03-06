@@ -35,7 +35,7 @@
   width: 198px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
-  margin: 25px;
+  margin: 15px;
 }
 
 .book-genre {
@@ -105,8 +105,7 @@
 }
 
 .list-title-info {
-  height: 15px;
-  width: 109px;
+  margin: 5px 0;
   color: $black;
   font-size: 16px;
   font-weight: 700;
@@ -114,8 +113,6 @@
 }
 
 .list-author-info {
-  height: 14px;
-  width: 109px;
   color: $grey;
   font-size: 14px;
   line-height: 18px;
