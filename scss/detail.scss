@@ -19,13 +19,13 @@
 
 .book-cover-page::after {
   background: url("images/badge.png") no-repeat;
-  content: "";
+  content: '';
   height: 120px;
-  width: 100px;
-  transform: rotate(1deg);
+  left: 250px;
   position: absolute;
   top: 50px;
-  left: 250px
+  transform: rotate(1deg);
+  width: 100px;
 }
 
 .book-detail {
