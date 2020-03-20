@@ -15,10 +15,9 @@
   height: 416px;
   margin: 50px 0 0 50px;
   width: 900px;
-}
-
-.book-cover-page::after {
-  background: url("images/badge.png") no-repeat;
+  
+  &::after {
+  background: url('images/badge.png') no-repeat;
   content: '';
   height: 120px;
   left: 250px;
@@ -26,7 +25,8 @@
   top: 50px;
   transform: rotate(1deg);
   width: 100px;
-}
+  }
+  }
 
 .book-genre {
   color: $grey;
