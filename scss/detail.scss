@@ -9,13 +9,24 @@
 }
 
 .book-cover-page {
-  display: flex;
-  margin: 50px 0 0 50px;
-  height: 416px;
-  width: 900px;
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
-}
+  display: flex;
+  height: 416px;
+  margin: 50px 0 0 50px;
+  width: 900px;
+  
+  &::after {
+  background: url('images/badge.png') no-repeat;
+  content: '';
+  height: 120px;
+  left: 250px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(1deg);
+  width: 100px;
+  }
+  }
 
 .book-genre {
   color: $grey;
@@ -25,15 +36,15 @@
 }
 
 .book-header {
-  margin: 10px 0 15px 15px;
   border-bottom: 5px solid $earls-green;
+  margin: 10px 0 15px 15px;
 }
 
 .book-info {
   display: flex;
   flex-direction: column;
-  margin: 0 25px 0 10px;
   flex-grow: 1;
+  margin: 0 25px 0 10px;
 }
 
 .book-img {
