@@ -22,10 +22,9 @@
   height: 416px;
   margin: 50px 0 0 50px;
   width: 900px;
-}
-
-.book-cover-page::after {
-  background: url("images/badge.png") no-repeat;
+  
+  &::after {
+  background: url('images/badge.png') no-repeat;
   content: '';
   height: 120px;
   left: 250px;
@@ -33,6 +32,7 @@
   top: 50px;
   transform: rotate(1deg);
   width: 100px;
+  }
 }
 
 .book-detail {
@@ -42,7 +42,7 @@
   flex-direction: column;
   height: 300px;
   margin: 15px;
-  width: 198px;
+  width: 200px;
 }
 
 .book-genre {
@@ -72,8 +72,8 @@
 
 .book-list-img {
   height: 200px;
-  margin: 25px 25px 10px 25px;
-  width: 142px;
+  margin: 25px 25px 10px;
+  width: 140px;
 }
 
 .book-list-info {
