@@ -31,7 +31,7 @@
   transform: rotate(1deg);
   width: 100px;
   }
-  }
+}
 
 .book-detail {
   background-color: $white;
@@ -40,7 +40,7 @@
   flex-direction: column;
   height: 300px;
   margin: 15px;
-  width: 198px;
+  width: 200px;
 }
 
 .book-genre {
@@ -70,8 +70,8 @@
 
 .book-list-img {
   height: 200px;
-  margin: 25px 25px 10px 25px;
-  width: 142px;
+  margin: 25px 25px 10px;
+  width: 140px;
 }
 
 .book-list-info {
