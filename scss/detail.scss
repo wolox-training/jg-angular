@@ -10,16 +10,19 @@
 }
 
 .back-button {
+  display: flex;
+  justify-content: center;
   margin: 30px;
-
-  &::after {
-  background: url("images/back-arrow-20.png") no-repeat;
-  content: url("index.html");
+  font-size: 18px;
+  
+  &::before {
+  display: flex;
+  background: url('images/back-arrow-20.png') no-repeat;
+  content: '';
   height: 25px;
-  position: absolute;
-  top: 25px;
-  left: 120px;
-  width: 25px;
+  margin-right: 5px;
+  position: relative;
+  width: 25px;;
   }
 }
 
@@ -31,6 +34,7 @@
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
+  position: relative;
   height: 416px;
   margin: 50px 0 0 50px;
   width: 900px;
@@ -39,9 +43,8 @@
   background: url('images/badge.png') no-repeat;
   content: '';
   height: 120px;
-  left: 500px;
+  left: 210px;
   position: absolute;
-  top: 50px;
   transform: rotate(1deg);
   width: 100px;
   }
@@ -61,7 +64,6 @@
 .book-detail-container {
   display: flex;
   justify-content: center;
-  height: 768px;
 }
 
 .book-genre {
