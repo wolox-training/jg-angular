@@ -11,14 +11,14 @@
 
 .back-button {
   display: flex;
+  font-size: 18px;
   justify-content: center;
   margin: 30px;
-  font-size: 18px;
-  
+
   &::before {
-  display: flex;
   background: url('images/back-arrow-20.png') no-repeat;
   content: '';
+  display: flex;
   height: 25px;
   margin-right: 5px;
   position: relative;
@@ -34,8 +34,8 @@
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
-  position: relative;
   height: 416px;
+  position: relative;
   margin: 50px 0 0 50px;
   width: 900px;
   
