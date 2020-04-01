@@ -169,7 +169,8 @@
 .login-inputs {
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 300px;
   background-color: $wild-sand;
@@ -187,6 +188,17 @@
   width: 252px;
   border-radius: 5px;
   background-color: $earls-green;
+  margin-bottom: 35px;
+
+  &::before {
+  background: $silver-chalice;
+  content: "";
+  display: flex;
+  height: 2px;
+  top: 40px;
+  position: relative;
+  width: 252px;
+  }
 }
 
 .form-button-singup {
@@ -216,8 +228,7 @@
 }
 
 .logo-wolox-login {
-  display: flex;
   height: 70px;
-  margin: 0 15px 20px 15px;
+  margin-bottom: 15px;
   width: 215px;
 }
