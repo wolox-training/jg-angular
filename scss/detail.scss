@@ -108,8 +108,8 @@
   border-top: 5px solid $cerulean;
   box-shadow: 0 4px 10px 0 $black-shadow;
   display: flex;
-  position: fixed;
   justify-content: space-between;
+  position: fixed;
   width: 100%;
 }
 
@@ -174,15 +174,15 @@
 }
 
 .login-inputs {
+  align-items: center;
+  background-color: $wild-sand;
+  border-top: 5px solid $cerulean;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 400px;
-  width: 300px;
-  background-color: $wild-sand;
+  justify-content: center;
   margin-top: 75px;
-  border-top: 5px solid $cerulean;
+  width: 300px;
 }
 
 .login-container {
@@ -191,30 +191,32 @@
 }
 
 .form-button-login {
-  height: 32px;
-  width: 252px;
-  border-radius: 5px;
   background-color: $earls-green;
+  border-radius: 5px;
+  color: $white;
+  height: 32px;
   margin-bottom: 35px;
+  width: 252px;
 
   &::before {
-  background: $silver-chalice;
-  content: "";
-  display: flex;
-  height: 2px;
-  top: 40px;
-  position: relative;
-  width: 252px;
+    background: $silver-chalice;
+    content: "";
+    display: flex;
+    height: 2px;
+    position: relative;
+    top: 40px;
+    width: 252px;
   }
 }
 
 .form-button-singup {
-  box-sizing: border-box;
-  height: 32px;
-  width: 252px;
-  border-radius: 5px;
   background-color: $wild-sand;
   border: 2px solid $earls-green;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: $earls-green;
+  height: 32px;
+  width: 252px;
 }
 
 .form-container {
@@ -228,10 +230,10 @@
 }
 
 .form-input {
+  background-color: $white;
+  border-radius: 5px;
   height: 32px;
   width: 252px;
-  border-radius: 5px;
-  background-color: $white;
 }
 
 .logo-wolox-login {
