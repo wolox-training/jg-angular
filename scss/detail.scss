@@ -7,12 +7,23 @@
 .all-books-list {
   background-color: $wild-sand;
   display: flex;
-  justify-content: center;
-  width: 1366px;
 }
 
 .back-button {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
   margin: 30px;
+
+  &::before {
+    background: url('images/back-arrow-20.png') no-repeat;
+    content: '';
+    display: flex;
+    height: 25px;
+    margin-right: 5px;
+    position: relative;
+    width: 25px;
+  }
 }
 
 .book-content-row {
@@ -24,29 +35,19 @@
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
   height: 416px;
+  position: relative;
   margin: 50px 0 0 50px;
   width: 900px;
-}
-
-.book-cover-page::after {
-  background: url("images/badge.png") no-repeat;
-  content: '';
-  height: 120px;
-  left: 500px;
-  position: absolute;
-  top: 50px;
-  transform: rotate(1deg);
-  width: 100px;
-}
-
-.book-cover-page::before {
-  background: url("images/back-arrow-20.png") no-repeat;
-  content: url("index.html");
-  height: 25px;
-  position: absolute;
-  top: 27px;
-  left: 155px;
-  width: 25px;
+  
+  &::after {
+    background: url('images/badge.png') no-repeat;
+    content: '';
+    height: 120px;
+    left: 210px;
+    position: absolute;
+    transform: rotate(1deg);
+    width: 100px;
+  }
 }
 
 .book-detail {
@@ -54,16 +55,15 @@
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 300px;
   margin: 15px;
-  width: 198px;
+  width: 200px;
 }
 
 .book-detail-container {
   display: flex;
   justify-content: center;
-  height: 768px;
-  width: 1366px;
 }
 
 .book-genre {
@@ -93,12 +93,14 @@
 
 .book-list-img {
   height: 200px;
-  margin: 25px 25px 10px 25px;
-  width: 142px;
+  margin: 30px 30px 5px;
+  width: 140px;
 }
 
 .book-list-info {
-  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px 30px;
 }
 
 .book-navbar {
@@ -107,8 +109,8 @@
   box-shadow: 0 4px 10px 0 $black-shadow;
   display: flex;
   position: fixed;
-  justify-content: space-around;
-  width: 1366px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .book-title {
@@ -122,12 +124,13 @@
 .books-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex: 1;
   margin-top: 100px;
 }
 
 .books-list-row {
   display: flex;
+  justify-content: center;
 }
 
 .default-text {  
@@ -144,26 +147,30 @@
 
 .list-author-info {
   color: $grey;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   margin-bottom: 10px;
 }
 
 .list-title-info {
   color: $black;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 18px;
   margin: 5px 0;
 }
 
+.logo-wolox {
+  display: flex;
+  margin-left: 200px;
+}
+
 .logout-navbar {
   color: $black;
   display: flex;
-  justify-content: flex-start;
   font-size: 18px;
   line-height: 21px;
-  margin: 25px;
+  margin: 25px 250px 25px 25px;
 }
 
 .login-inputs {
