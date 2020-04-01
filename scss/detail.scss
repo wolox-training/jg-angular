@@ -9,6 +9,23 @@
   display: flex;
 }
 
+.back-button {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin: 30px;
+
+  &::before {
+    background: url('images/back-arrow-20.png') no-repeat;
+    content: '';
+    display: flex;
+    height: 25px;
+    margin-right: 5px;
+    position: relative;
+    width: 25px;
+  }
+}
+
 .book-content-row {
   margin: 15px;
 }
@@ -18,18 +35,18 @@
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
   height: 416px;
+  position: relative;
   margin: 50px 0 0 50px;
   width: 900px;
   
   &::after {
-  background: url('images/badge.png') no-repeat;
-  content: '';
-  height: 120px;
-  left: 250px;
-  position: absolute;
-  top: 50px;
-  transform: rotate(1deg);
-  width: 100px;
+    background: url('images/badge.png') no-repeat;
+    content: '';
+    height: 120px;
+    left: 210px;
+    position: absolute;
+    transform: rotate(1deg);
+    width: 100px;
   }
 }
 
@@ -42,6 +59,11 @@
   height: 300px;
   margin: 15px;
   width: 200px;
+}
+
+.book-detail-container {
+  display: flex;
+  justify-content: center;
 }
 
 .book-genre {
