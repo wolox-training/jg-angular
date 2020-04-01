@@ -16,13 +16,13 @@
   margin: 30px;
 
   &::before {
-  background: url('images/back-arrow-20.png') no-repeat;
-  content: '';
-  display: flex;
-  height: 25px;
-  margin-right: 5px;
-  position: relative;
-  width: 25px;;
+    background: url('images/back-arrow-20.png') no-repeat;
+    content: '';
+    display: flex;
+    height: 25px;
+    margin-right: 5px;
+    position: relative;
+    width: 25px;
   }
 }
 
@@ -40,13 +40,13 @@
   width: 900px;
   
   &::after {
-  background: url('images/badge.png') no-repeat;
-  content: '';
-  height: 120px;
-  left: 210px;
-  position: absolute;
-  transform: rotate(1deg);
-  width: 100px;
+    background: url('images/badge.png') no-repeat;
+    content: '';
+    height: 120px;
+    left: 210px;
+    position: absolute;
+    transform: rotate(1deg);
+    width: 100px;
   }
 }
 
