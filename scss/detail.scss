@@ -133,6 +133,12 @@
   justify-content: center;
 }
 
+.default-rectangle {
+  border-radius: 5px;
+  height: 32px;
+  width: 252px;
+}
+
 .default-text {  
   color: $grey;
   font-size: 20px;
@@ -192,36 +198,36 @@
 
 .form-button-login {
   background-color: $earls-green;
-  border-radius: 5px;
   color: $white;
-  height: 32px;
-  margin-bottom: 35px;
-  width: 252px;
+  justify-content: center;
+  margin: 25px 0 25px 0;
 
-  &::before {
-    background: $silver-chalice;
-    content: "";
-    display: flex;
+  &::after {
+    content: '';
+    background-color: $silver-chalice;
+    display: block;
     height: 2px;
     position: relative;
-    top: 40px;
-    width: 252px;
+    top: 25px;
+    width: 100%;
   }
 }
 
 .form-button-singup {
   background-color: $wild-sand;
   border: 2px solid $earls-green;
-  border-radius: 5px;
   box-sizing: border-box;
   color: $earls-green;
-  height: 32px;
-  width: 252px;
+  margin-top: 10px;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
+}
+
+.form-label {
+  margin: 20px 0 10px 0;
 }
 
 .form-login {
@@ -231,13 +237,10 @@
 
 .form-input {
   background-color: $white;
-  border-radius: 5px;
-  height: 32px;
-  width: 252px;
 }
 
 .logo-wolox-login {
   height: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: 215px;
 }
