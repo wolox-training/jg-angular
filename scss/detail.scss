@@ -136,7 +136,6 @@
 .default-rectangle {
   border-radius: 5px;
   height: 32px;
-  width: 252px;
 }
 
 .default-text {  
@@ -188,6 +187,7 @@
   height: 400px;
   justify-content: center;
   margin-top: 75px;
+  padding: 25px;
   width: 300px;
 }
 
@@ -200,7 +200,7 @@
   background-color: $earls-green;
   color: $white;
   justify-content: center;
-  margin: 25px 0 25px 0;
+  margin: 25px 0;
 
   &::after {
     content: '';
@@ -224,15 +224,24 @@
 .form-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex: 1;
 }
 
 .form-label {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 10px;
 }
 
 .form-login {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .form-input {
@@ -241,6 +250,5 @@
 
 .logo-wolox-login {
   height: 70px;
-  margin-bottom: 10px;
   width: 215px;
 }
