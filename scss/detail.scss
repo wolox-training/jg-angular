@@ -108,8 +108,8 @@
   border-top: 5px solid $cerulean;
   box-shadow: 0 4px 10px 0 $black-shadow;
   display: flex;
-  position: fixed;
   justify-content: space-between;
+  position: fixed;
   width: 100%;
 }
 
@@ -131,6 +131,11 @@
 .books-list-row {
   display: flex;
   justify-content: center;
+}
+
+.default-rectangle {
+  border-radius: 5px;
+  height: 32px;
 }
 
 .default-text {  
@@ -171,4 +176,78 @@
   font-size: 18px;
   line-height: 21px;
   margin: 25px 250px 25px 25px;
+}
+
+.login-inputs {
+  align-items: center;
+  background-color: $wild-sand;
+  border-top: 5px solid $cerulean;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin-top: 75px;
+  padding: 25px;
+  width: 300px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button-login {
+  background-color: $earls-green;
+  color: $white;
+  justify-content: center;
+  margin: 25px 0;
+
+  &::after {
+    content: '';
+    background-color: $silver-chalice;
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 25px;
+    width: 100%;
+  }
+}
+
+.form-button-singup {
+  background-color: $wild-sand;
+  border: 2px solid $earls-green;
+  box-sizing: border-box;
+  color: $earls-green;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-label {
+  margin: 20px 0 10px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-input {
+  background-color: $white;
+}
+
+.logo-wolox-login {
+  height: 70px;
+  width: 215px;
 }
