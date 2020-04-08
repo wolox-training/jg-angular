@@ -2,8 +2,8 @@
 
 $book-badge-height: 120px;
 $book-badge-width: 100px;
-$badge-mobile-height: calc(#{$book-badge-height} * (70/100));
-$badge-mobile-width: calc(#{$book-badge-width} * (70/100));
+$lower-screen-height: calc(#{$book-badge-height} * 0.7);
+$lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
 * {
   font-family: Roboto;
@@ -45,8 +45,7 @@ $badge-mobile-width: calc(#{$book-badge-width} * (70/100));
   width: 900px;
   
   &::after {
-    background: url('images/badge.png') no-repeat;
-    background-size: 100%;
+    background: url('images/badge.png') center/100% no-repeat;
     content: '';
     height: $book-badge-height;
     left: 210px;
@@ -267,13 +266,13 @@ $badge-mobile-width: calc(#{$book-badge-width} * (70/100));
   .book-cover-page {
     margin: 50px 0 0;
     height: 570px;
-    width: 336px;
+    width: 335px;
     flex-direction: column;
     padding: 20px;
 
     &::after {
-      height: $badge-mobile-height;
-      width: $badge-mobile-width;
+      height: $lower-screen-height;
+      width: $lower-screen-width;
     }
   }
 
@@ -309,5 +308,4 @@ $badge-mobile-width: calc(#{$book-badge-width} * (70/100));
   .book-header{
     margin: 10px 0 20px;
   }
-  
 }
