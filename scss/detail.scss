@@ -64,6 +64,13 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   height: 300px;
   margin: 15px;
   width: 200px;
+  transition: 0.2s ease-out;
+
+
+  &:hover {
+    transform: scale(1.1); 
+    transition: 0.2s ease-in;
+  }
 }
 
 .book-detail-container {
