@@ -60,10 +60,16 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 300px;
+  justify-content: center;
   margin: 15px;
+  transition: transform 0.2s ease-out;
   width: 200px;
+
+  &:hover {
+    transform: scale(1.1); 
+    transition-timing-function: ease-in;
+  }
 }
 
 .book-detail-container {
