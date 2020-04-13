@@ -271,11 +271,11 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   }
 
   .book-cover-page {
-    margin: 50px 0 0;
-    height: 570px;
-    width: 335px;
     flex-direction: column;
+    height: 570px;
+    margin: 50px 0 0;
     padding: 20px;
+    width: 335px;
 
     &::after {
       height: $lower-screen-height;
@@ -286,8 +286,8 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   .book-img {
     align-self: center;
     height: 300px;
-    width: 210px;
     margin: 15px 0 0;
+    width: 210px;
   }
 
   .book-title {
