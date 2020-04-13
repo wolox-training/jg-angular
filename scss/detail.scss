@@ -1,5 +1,10 @@
 @import 'colors';
 
+$book-badge-height: 120px;
+$book-badge-width: 100px;
+$lower-screen-height: calc(#{$book-badge-height} * 0.7);
+$lower-screen-width: calc(#{$book-badge-width} * 0.7);
+
 * {
   font-family: Roboto;
 }
@@ -40,13 +45,13 @@
   width: 900px;
   
   &::after {
-    background: url('images/badge.png') no-repeat;
+    background: url('images/badge.png') center/100% no-repeat;
     content: '';
-    height: 120px;
+    height: $book-badge-height;
     left: 210px;
     position: absolute;
     transform: rotate(1deg);
-    width: 100px;
+    width: $book-badge-width;
   }
 }
 
@@ -250,4 +255,57 @@
 .logo-wolox-login {
   height: 70px;
   width: 215px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .book-detail-container {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .book-cover-page {
+    flex-direction: column;
+    height: 570px;
+    margin: 50px 0 0;
+    padding: 20px;
+    width: 335px;
+
+    &::after {
+      height: $lower-screen-height;
+      width: $lower-screen-width;
+    }
+  }
+
+  .book-img {
+    align-self: center;
+    height: 300px;
+    margin: 15px 0 0;
+    width: 210px;
+  }
+
+  .book-title {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  .book-genre {
+    font-size: 15px;
+  }
+
+  .default-text {  
+    font-size: 14px;
+  }
+
+  .book-content-row {
+    margin: 0 0 15px;
+  }
+
+  .book-info {
+    flex: 1;
+    margin: 0;
+  }
+
+  .book-header{
+    margin: 10px 0 20px;
+  }
 }
