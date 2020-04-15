@@ -1,7 +1,7 @@
 @import 'colors';
 
-$book-badge-height: 120px;
-$book-badge-width: 100px;
+$book-badge-height: 115px;
+$book-badge-width: 95px;
 $lower-screen-height: calc(#{$book-badge-height} * 0.7);
 $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
@@ -17,7 +17,7 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 .back-button {
   display: flex;
   font-size: 18px;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 30px;
 
   &::before {
@@ -38,17 +38,20 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 .book-cover-page {
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
-  display: flex;
-  height: 416px;
+  display: grid;
+  margin-left: 35px;
+  height: 569px;
+  width: 853px;
+  grid-template-areas: 
+    "area1 area1";
   position: relative;
-  margin: 50px 0 0 50px;
-  width: 900px;
   
   &::after {
     background: url('images/badge.png') center/100% no-repeat;
     content: '';
     height: $book-badge-height;
     left: 210px;
+    top: 150px;
     position: absolute;
     transform: rotate(1deg);
     width: $book-badge-width;
@@ -73,8 +76,7 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 }
 
 .book-detail-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
 }
 
 .book-genre {
@@ -85,8 +87,11 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 }
 
 .book-header {
-  border-bottom: 5px solid $earls-green;
-  margin: 10px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: area1;
+  margin: 25px 0 15px 15px;
 }
 
 .book-img {
@@ -97,9 +102,10 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
 .book-info {
   display: flex;
+  align-self: center;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 0 25px 0 10px;
+  flex: 1;
+  margin: 0 150px 30px 0;
 }
 
 .book-list-img {
@@ -129,7 +135,7 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   font-size: 30px;
   font-weight: 700;
   line-height: 10px;
-  margin: 25px 15px 25px 0;
+  margin: 25px 15px 15px 0;
 } 
 
 .books-list {
@@ -265,8 +271,8 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
 @media only screen and (max-width: 1024px) {
   .book-detail-container {
-    align-items: center;
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .book-cover-page {
