@@ -39,22 +39,23 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   background-color: $white;
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: grid;
-  margin-left: 35px;
-  height: 569px;
-  width: 853px;
-  position: relative;
   grid-template-areas: 
     "area1 area1"
     "area2 area2"
     "area3 area4";
+  height: 569px;
+  margin-left: 35px;
+  position: relative;
+  width: 853px;
+
   
   &::after {
     background: url('images/badge.png') center/100% no-repeat;
     content: '';
     height: $book-badge-height;
     left: 220px;
-    top: 145px;
     position: absolute;
+    top: 145px;
     transform: rotate(1deg);
     width: $book-badge-width;
   }
@@ -90,23 +91,23 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 }
 
 .book-genre-container {
-  grid-area: area2;
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  grid-area: area2;
 }
 
 .book-img-container{
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
   grid-area: area3;
 }
 
 .book-header {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   grid-area: area1;
   margin: 25px 0 0 15px;
 }
@@ -118,12 +119,12 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 }
 
 .book-info {
-  display: flex;
   align-self: center;
-  flex-direction: column;
+  display: flex;
   flex: 1;
-  margin: 0 150px 30px 20px;
+  flex-direction: column;
   grid-area: area4;
+  margin: 0 150px 30px 20px;
 }
 
 .book-list-img {
@@ -289,21 +290,21 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
 @media only screen and (max-width: 1024px) {
   .book-detail-container {
+    align-items: center;
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
   }
 
   .book-cover-page {
+    grid-template-areas: 
+      "area1 area1"
+      "area3 area3"
+      "area2 area2"
+      "area4 area4";
     height: 570px;
     margin: 50px 0 0;
     padding: 20px;
     width: 335px;
-    grid-template-areas: 
-    "area1 area1"
-    "area3 area3"
-    "area2 area2"
-    "area4 area4";
   
     &::after {
       height: $lower-screen-height;
@@ -314,10 +315,10 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   }
 
   .book-img {
+    align-self: center;
     height: 300px;
     margin: 15px 0 0;
     width: 210px;
-    align-self: center;
   }
 
   .book-title {
