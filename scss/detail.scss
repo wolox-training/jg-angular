@@ -42,16 +42,18 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   margin-left: 35px;
   height: 569px;
   width: 853px;
-  grid-template-areas: 
-    "area1 area1";
   position: relative;
+  grid-template-areas: 
+    "area1 area1"
+    "area2 area2"
+    "area3 area4";
   
   &::after {
     background: url('images/badge.png') center/100% no-repeat;
     content: '';
     height: $book-badge-height;
-    left: 210px;
-    top: 150px;
+    left: 220px;
+    top: 145px;
     position: absolute;
     transform: rotate(1deg);
     width: $book-badge-width;
@@ -84,6 +86,21 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.book-genre-container {
+  grid-area: area2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.book-img-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: area3;
 }
 
 .book-header {
@@ -91,12 +108,12 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   flex-direction: column;
   align-items: center;
   grid-area: area1;
-  margin: 25px 0 15px 15px;
+  margin: 25px 0 0 15px;
 }
 
 .book-img {
   display: flex;
-  margin: 25px;
+  margin: 0 0 45px 30px;
   width: 250px;
 }
 
@@ -105,7 +122,8 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   align-self: center;
   flex-direction: column;
   flex: 1;
-  margin: 0 150px 30px 0;
+  margin: 0 150px 30px 20px;
+  grid-area: area4;
 }
 
 .book-list-img {
@@ -271,37 +289,49 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
 @media only screen and (max-width: 1024px) {
   .book-detail-container {
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    align-items: center;
   }
 
   .book-cover-page {
-    flex-direction: column;
     height: 570px;
     margin: 50px 0 0;
     padding: 20px;
     width: 335px;
-
+    grid-template-areas: 
+    "area1 area1"
+    "area3 area3"
+    "area2 area2"
+    "area4 area4";
+  
     &::after {
       height: $lower-screen-height;
       width: $lower-screen-width;
+      top: 60px;
+      left: 230px;
     }
   }
 
   .book-img {
-    align-self: center;
     height: 300px;
     margin: 15px 0 0;
     width: 210px;
+    align-self: center;
   }
 
   .book-title {
     font-size: 25px;
-    margin: 20px 0;
+    margin: 10px 0 20px;
   }
 
   .book-genre {
     font-size: 15px;
+    margin: 20px 0 0;
+  }
+
+  .book-genre-container {
+    border-bottom: 5px solid $earls-green;
   }
 
   .default-text {  
@@ -314,10 +344,10 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
   .book-info {
     flex: 1;
-    margin: 0;
+    margin: 15px 0 0 0;
   }
 
   .book-header{
-    margin: 10px 0 20px;
+    margin: 0;
   }
 }
