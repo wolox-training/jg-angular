@@ -40,13 +40,13 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   box-shadow: 4px 4px 10px 0 $black-shadow;
   display: grid;
   grid-template-areas: 
-    "area1 area1"
-    "area2 area2"
-    "area3 area4";
-  height: 569px;
+    "book-title book-title"
+    "book-genre book-genre"
+    "book-img book-info";
+  height: 570px;
   margin-left: 35px;
   position: relative;
-  width: 853px;
+  width: 855px;
 
   
   &::after {
@@ -94,21 +94,21 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   align-items: center;
   display: flex;
   flex-direction: column;
-  grid-area: area2;
+  grid-area: book-genre;
 }
 
-.book-img-container{
+.book-img-container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  grid-area: area3;
+  grid-area: book-img;
 }
 
 .book-header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  grid-area: area1;
+  grid-area: book-title;
   margin: 25px 0 0 15px;
 }
 
@@ -123,7 +123,7 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   display: flex;
   flex: 1;
   flex-direction: column;
-  grid-area: area4;
+  grid-area: book-info;
   margin: 0 150px 30px 20px;
 }
 
@@ -297,10 +297,10 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
 
   .book-cover-page {
     grid-template-areas: 
-      "area1 area1"
-      "area3 area3"
-      "area2 area2"
-      "area4 area4";
+      "book-title book-title"
+      "book-img book-img"
+      "book-genre book-genre"
+      "book-info book-info";
     height: 570px;
     margin: 50px 0 0;
     padding: 20px;
@@ -308,9 +308,9 @@ $lower-screen-width: calc(#{$book-badge-width} * 0.7);
   
     &::after {
       height: $lower-screen-height;
-      width: $lower-screen-width;
-      top: 60px;
       left: 230px;
+      top: 60px;
+      width: $lower-screen-width;
     }
   }
 
