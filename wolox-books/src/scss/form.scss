@@ -1,0 +1,101 @@
+@import './scss/colors';
+
+$book-badge-height: 115px;
+$book-badge-width: 95px;
+$lower-screen-height: calc(#{$book-badge-height} * 0.7);
+$lower-screen-width: calc(#{$book-badge-width} * 0.7);
+
+* {
+  font-family: Roboto;
+}
+
+.default-rectangle {
+  border-radius: 5px;
+  height: 32px;
+}
+
+.default-text {  
+  color: $grey;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.category {
+  color: $black;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.login-inputs {
+  align-items: center;
+  background-color: $wild-sand;
+  border-top: 5px solid $cerulean;
+  display: flex;
+  flex-direction: column;
+  height: 635px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 25px;
+  width: 300px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button-green {
+  background-color: $earls-green;
+  color: $white;
+  justify-content: center;
+  margin: 25px 0;
+
+  &::after {
+    content: '';
+    background-color: $silver-chalice;
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 25px;
+    width: 100%;
+  }
+}
+
+.form-button-empty {
+  background-color: $wild-sand;
+  border: 2px solid $earls-green;
+  box-sizing: border-box;
+  color: $earls-green;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-label {
+  margin: 20px 0 10px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-input {
+  background-color: $white;
+}
+
+.logo-wolox-login {
+  height: 70px;
+  width: 215px;
+}
