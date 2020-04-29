@@ -1,14 +1,5 @@
 @import './scss/colors';
 
-$book-badge-height: 115px;
-$book-badge-width: 95px;
-$lower-screen-height: calc(#{$book-badge-height} * 0.7);
-$lower-screen-width: calc(#{$book-badge-width} * 0.7);
-
-* {
-  font-family: Roboto;
-}
-
 .default-rectangle {
   border-radius: 5px;
   height: 32px;

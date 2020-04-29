@@ -1,1 +1,8 @@
-@import './scss/application';
+@import './scss/equalizer.scss';
+@import './scss/form.scss';
+@import './scss/colors';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: Roboto;
+  }
