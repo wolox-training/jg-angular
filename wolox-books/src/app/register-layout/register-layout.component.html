@@ -4,26 +4,10 @@
       <img class="logo-wolox-login" src="../../assets/LogoWolox-Original.png"  alt="Wolox Logotype" />
       <div class="form-container">
         <form class="form-login">
-          <div class="form-group">
-            <label class="form-label" for="email">Nombre</label>
-            <input class="default-rectangle form-input" type="text" id="name" name="name" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="password">Apellido</label>
-            <input class="default-rectangle form-input" type="text" id="password" name="last-name" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="password">Email</label>
-            <input class="default-rectangle form-input" type="text" id="email" name="email" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="password">Password</label>
-            <input class="default-rectangle form-input" type="text" id="password" name="password" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="password">Confirmación de Password</label>
-            <input class="default-rectangle form-input" type="text" id="password-confirm" name="password-confirm" />
-          </div>
+          <div class="form-group" *ngFor="let field of fields">
+            <label class="form-label" [for]="field.id">{{field.name}}</label>
+            <input class="default-rectangle form-input" [type]="field.type" [id]="field.id" [name]="field.name" />
+        </div>
           <button class="default-rectangle form-button-green" type="submit">Sing Up</button>
           <button class="default-rectangle form-button-empty" type="button">Login</button>
         </form>
@@ -31,4 +15,3 @@
     </div>
   </div>
 </body>
-
