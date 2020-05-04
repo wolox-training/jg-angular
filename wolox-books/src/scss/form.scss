@@ -17,7 +17,7 @@
   margin-right: 5px;
 }
 
-.login-inputs {
+.layout-inputs {
   align-items: center;
   background-color: $wild-sand;
   border-top: 5px solid $cerulean;
@@ -30,7 +30,7 @@
   width: 300px;
 }
 
-.login-container {
+.layout-container {
   display: flex;
   justify-content: center;
 }
@@ -76,7 +76,7 @@
   margin: 20px 0 10px;
 }
 
-.form-login {
+.form-layout {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -86,7 +86,7 @@
   background-color: $white;
 }
 
-.logo-wolox-login {
+.logo-wolox-layout {
   height: 70px;
   width: 215px;
 }
