@@ -15,7 +15,7 @@ export class LoginLayoutComponent implements OnInit {
     },
     {
       name: 'Password',
-      type: 'text',
+      type: 'password',
       id: 'password'
     },
   ]
