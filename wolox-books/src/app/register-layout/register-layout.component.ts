@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { formFields } from './constants';
 
 @Component({
   selector: 'app-register-layout',
@@ -6,34 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-layout.component.scss']
 })
 export class RegisterLayoutComponent implements OnInit {
-  
-  fields = [
-    {
-      name: 'Nombre',
-      type: 'text',
-      id: 'name'
-    },
-    {
-      name: 'Apellido',
-      type: 'text',
-      id: 'last-name'
-    },
-    {
-      name: 'Email',
-      type: 'text',
-      id: 'email'
-    },
-    {
-      name: 'Password',
-      type: 'text',
-      id: 'password'
-    },
-    {
-      name: 'Confirmación de Password',
-      type: 'text',
-      id: 'confirm-pass'
-    }
-  ] 
+
+  fields = formFields;
+
   constructor() { }
 
   ngOnInit(): void {

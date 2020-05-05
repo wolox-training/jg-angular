@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { formFields } from './constants';
 
 @Component({
   selector: 'app-login-layout',
@@ -7,18 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginLayoutComponent implements OnInit {
 
-  fields = [
-    {
-      name: 'Email',
-      type: 'text',
-      id: 'email'
-    },
-    {
-      name: 'Password',
-      type: 'password',
-      id: 'password'
-    },
-  ]
+  fields = formFields;
 
   constructor() { }
 
